@@ -8,7 +8,7 @@ This project demonstrates how to use the Codename One AdmobFullScreen library to
 === iOS Prerequisites
 
 Before building the project, you should edit the common/codenameone_settings.properties file to change the
-`>GADApplicationIdentifier` to your Admob Project ID.
+`GADApplicationIdentifier` to your Admob Project ID.
 
 You can do this, by changing the `ios.plistInject` build hint.  E.g.
 
