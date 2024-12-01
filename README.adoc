@@ -1,0 +1,41 @@
+= Example Codename One AdmobFullScreen Project
+
+This is a sample project using the https://github.com/codenameone/admobfullscreen-codenameone[Codename One AdmobFullScreen library].
+This project demonstrates how to use the Codename One AdmobFullScreen library to display Admob Full Screen Ads in your Codename One application.
+
+== Building the Project
+
+=== iOS Prerequisites
+
+Before building the project, you should edit the common/codenameone_settings.properties file to change the
+`>GADApplicationIdentifier` to your Admob Project ID.
+
+You can do this, by changing the `ios.plistInject` build hint.  E.g.
+
+```
+codename1.arg.ios.plistInject=<key>GADApplicationIdentifier</key><string>YOUR_APP_ID_HERE</string>
+```
+
+If you do not yet have one, you should create one https://admob.google.com[here].
+
+=== Android Prerequisites
+
+Add the following to your `android.xapplication` build hint:
+
+```
+<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="YOUR_APP_ID_HERE"/>
+```
+
+If you don't have an Admob App ID, you can create one https://admob.google.com[here].
+
+=== The Ad Unit ID
+
+This project is currently configured to serve only test ads.
+It uses the standard test ad unit ID, specified as a static variable in FullscreenAdTest.java:
+
+```
+private static final String AD_UNIT_ID_INTERSTITIAL_IOS = "ca-app-pub-3940256099942544/1033173712"; // TEST
+```
+
+Don't change this, unless you intend to repurpose and redeploy as a real app with real ads.
+
