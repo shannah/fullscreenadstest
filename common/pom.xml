@@ -22,7 +22,7 @@
         <dependency>
             <groupId>com.codenameone</groupId>
             <artifactId>admob-fullscreen-lib</artifactId>
-            <version>LATEST</version>
+            <version>1.0.5</version>
             <type>pom</type>
         </dependency>
 
